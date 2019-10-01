@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Community Events Board</title>
+    </head>
+    <body>
+      <form action="/results" method = 'get'>
+        <h1>
+
+      </form>
+      <!-- <h1> -->
+      <h1>Community Events Board</h1>
+      <div class="event-list">
+        <ul>
+          {% for Event in Events %}
+            <li>{{ Event.event_date }} - {{ Event.event_name }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </body>
+</html>
